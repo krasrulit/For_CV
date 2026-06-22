@@ -1,26 +1,26 @@
-
 # ML
 
-В этом разделе — три собранных PDF-файла по **Machine Learning** и один ноутбук:
+This section has three compiled PDFs on **Machine Learning** and one notebook:
 
-- [**ML_Практическая_справка.pdf**](./ML_Практическая_справка.pdf) — первая часть моего разбора по применению ML:  подготовка данных в `pandas/NumPy` (масштабирование `StandardScaler/MinMaxScaler`, кодирование `OneHotEncoder`); разбиение и валидация (`train_test_split`, `KFold/StratifiedKFold`, `cross_val_score`); пайплайны `Pipeline/ColumnTransformer` без data leakage; бейзлайны и метрики (`accuracy/precision/recall/F1`, `ROC-AUC`, `MSE/MAE/R²`); тюнинг (`GridSearchCV/RandomizedSearchCV`, `random_state`); нюансы дисбаланса (`class_weight`, стратификация).
+- [**ML_Практическая_справка.pdf**](./ML_Практическая_справка.pdf) — part one of my practical walkthrough of applying ML: data prep in `pandas/NumPy` (scaling with `StandardScaler/MinMaxScaler`, encoding with `OneHotEncoder`); splitting and validation (`train_test_split`, `KFold/StratifiedKFold`, `cross_val_score`); `Pipeline/ColumnTransformer` without data leakage; baselines and metrics (`accuracy/precision/recall/F1`, `ROC-AUC`, `MSE/MAE/R²`); tuning (`GridSearchCV/RandomizedSearchCV`, `random_state`); and handling imbalance (`class_weight`, stratification).
 
-- [**ML_Практическая_справка_2.pdf**](./ML_Практическая_справка_2.pdf) — продолжение разбора: `DBSCAN` (включая k-distance plot, `cosine`/`haversine`), метрики качества кластеризации (силуэт, индекс Данна), базовые регрессии (`OLS/Ridge/Lasso/Logistic`), `PCA`, ансамбли (`RandomForest`, `CatBoost/XGBoost/LightGBM`), blending/stacking и небольшие практические советы.
+- [**ML_Практическая_справка_2.pdf**](./ML_Практическая_справка_2.pdf) — continuation: `DBSCAN` (including k-distance plot, `cosine`/`haversine`), clustering-quality metrics (silhouette, Dunn index), basic regressions (`OLS/Ridge/Lasso/Logistic`), `PCA`, ensembles (`RandomForest`, `CatBoost/XGBoost/LightGBM`), blending/stacking, and a few practical tips.
 
-- [**ML_Теория.pdf**](./ML_Теория.pdf) — теоретический конспект: переобучение и кросс-валидация; `GD/SGD` и метод Ньютона; `kNN`; `k-means`; решающие деревья и pruning; `SVM`; `DBSCAN`; критерии качества кластеризации; метрики классификации/регрессии и `ROC-AUC`; регуляризация; ядра; `PCA` и выбор числа компонент; ансамбли (bagging/boosting/stacking); `EM`-алгоритм и разложение bias-variance.
+- [**ML_Теория.pdf**](./ML_Теория.pdf) — theory notes: overfitting and cross-validation; `GD/SGD` and Newton's method; `kNN`; `k-means`; decision trees and pruning; `SVM`; `DBSCAN`; clustering-quality criteria; classification/regression metrics and `ROC-AUC`; regularization; kernels; `PCA` and choosing the number of components; ensembles (bagging/boosting/stacking); the `EM` algorithm and the bias-variance decomposition.
 
-- [**Введение в ML.ipynb**](./Введение%20в%20ML.ipynb) — первая лабораторная работа из учебника Яндекса по ML (первые эксперименты, базовые пайплайны и метрики).
+- [**Введение в ML.ipynb**](./Введение%20в%20ML.ipynb) — the first lab from Yandex's ML textbook (first experiments, basic pipelines, and metrics).
 
 ---
 
-## Навыки, которые демонстрирую
+## Skills demonstrated
 
-- Предобработка и оценивание: масштабирование/нормализация, разбиение на train/test, кросс-валидация, отбор компонент (`PCA`), ранняя остановка и регуляризация.  
-- Линейные модели и их настройка: `LinearRegression`, `Ridge`, `Lasso`, `LogisticRegression` (пайплайны, ключевые гиперпараметры, интерпретация метрик).  
-- Кластеризация и её оценка: `k-means`, `DBSCAN` (подбор `eps` по k-distance, `cosine` + `normalize`, `haversine` для геоданных), силуэт, индекс Данна, compactness/separation.  
-- Деревья и ансамбли: `DecisionTree`, `RandomForest`, градиентный бустинг (`CatBoost`, `XGBoost`, `LightGBM`), blending и `StackingClassifier/StackingRegressor`.  
-- Метрические методы и ядра: `kNN`, `SVM`, выбор и применение ядер.  
-- Метрики: для классификации (`Accuracy`, `LogLoss`, `ROC-AUC`, `F1`) и регрессии (`MSE`, `MAE`, `R²`).
+- Preprocessing and evaluation: scaling/normalization, train/test splitting, cross-validation, component selection (`PCA`), early stopping, and regularization.
+- Linear models and their tuning: `LinearRegression`, `Ridge`, `Lasso`, `LogisticRegression` (pipelines, key hyperparameters, metric interpretation).
+- Clustering and its evaluation: `k-means`, `DBSCAN` (choosing `eps` via k-distance, `cosine` + `normalize`, `haversine` for geo data), silhouette, Dunn index, compactness/separation.
+- Trees and ensembles: `DecisionTree`, `RandomForest`, gradient boosting (`CatBoost`, `XGBoost`, `LightGBM`), blending, and `StackingClassifier/StackingRegressor`.
+- Instance-based methods and kernels: `kNN`, `SVM`, choosing and applying kernels.
+- Metrics: for classification (`Accuracy`, `LogLoss`, `ROC-AUC`, `F1`) and regression (`MSE`, `MAE`, `R²`).
 
+---
 
-> **Примечание.** Часть теоретических материалов взята из учебника преподавателя по ML в МГУ Антона Игоревича Андрейцева: [andreitsev/Machine-Learning-EF-MSU](https://github.com/andreitsev/Machine-Learning-EF-MSU).
+> **Note.** Some of the theory materials are drawn from the ML course notes of my MSU professor, Anton Igorevich Andreitsev: [andreitsev/Machine-Learning-EF-MSU](https://github.com/andreitsev/Machine-Learning-EF-MSU).

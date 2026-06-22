@@ -1,62 +1,61 @@
 # Python Libraries
 
-В этой части репозитория собраны мои разборы и практические примеры работы с ключевыми библиотеками Python для анализа данных и визуализации: **NumPy**, **Matplotlib**, **Seaborn**.  
-Каждая папка содержит ноутбуки с функциями и задачами — от базового синтаксиса до реальных кейсов.
+This part of the repository collects my walkthroughs and hands-on examples for the key Python libraries for data analysis and visualization: **NumPy**, **Matplotlib**, **Seaborn**.
+Each folder has notebooks with functions and problems — from basic syntax to real cases.
 
 ---
 
-## Содержание
+## Contents
 
 ### [NumPy](numpy)
-- [Функции Numpy.ipynb](numpy/Функции%20Numpy.ipynb)  
-  Обзор ключевых функций: создание массивов, индексация, broadcasting, агрегаты (`sum`, `mean`, `std`), генерация случайных чисел, линейная алгебра (`dot`, `eig`), фильтрация и маски.  
-   Практический справочник по работе с многомерными массивами.
+- [Функции Numpy.ipynb](numpy/Функции%20Numpy.ipynb)
+  An overview of key functions: array creation, indexing, broadcasting, aggregates (`sum`, `mean`, `std`), random-number generation, linear algebra (`dot`, `eig`), filtering, and masks.
+  A practical reference for working with multidimensional arrays.
 
 ---
 
 ### [Matplotlib](matplotlib)
-- [Функции_matplotlib.ipynb](matplotlib/Функции_matplotlib.ipynb)  
-  Базовые возможности библиотеки: линии, маркеры, цвета, подписи, легенды.  
-- [Функции_matplotlib2.ipynb](matplotlib/Функции_matplotlib2.ipynb)  
-  Расширенные возможности: подграфики (`subplots`), работа с осями и стилями, настройка отображения.  
-- [Задачи_matplotlib.ipynb](matplotlib/Задачи_matplotlib.ipynb)  
-  Практические задачи: построение графиков, настройка визуализации, отображение зависимостей.  
-- [Работа_с_картой.ipynb](matplotlib/Работа_с_картой.ipynb)  
-  Спец-задача: визуализация данных на карте с использованием возможностей matplotlib.  
+- [Функции_matplotlib.ipynb](matplotlib/Функции_matplotlib.ipynb)
+  The library's basics: lines, markers, colors, labels, legends.
+- [Функции_matplotlib2.ipynb](matplotlib/Функции_matplotlib2.ipynb)
+  More advanced features: subplots, working with axes and styles, display settings.
+- [Задачи_matplotlib.ipynb](matplotlib/Задачи_matplotlib.ipynb)
+  Practice problems: building charts, tuning visualizations, displaying relationships.
+- [Работа_с_картой.ipynb](matplotlib/Работа_с_картой.ipynb)
+  A special task: visualizing data on a map using Matplotlib.
 
- Папка демонстрирует переход от базового использования Matplotlib до продвинутых кейсов визуализации.
+This folder shows the progression from basic Matplotlib use to more advanced visualization cases.
 
 ---
 
 ### [Seaborn](seaborn)
-- [Seaborn.ipynb](seaborn/Seaborn.ipynb)  
-  Конспект по функциям библиотеки: категориальные и числовые графики, работа с палитрами, настройка стиля.  
-- [Задачи_seaborn_1.ipynb](seaborn/Задачи_seaborn_1.ipynb)  
-  Практические задачи: распределения, диаграммы рассеяния, боксплоты, тепловые карты.  
-- [Задачи_seaborn_2.ipynb](seaborn/Задачи_seaborn_2.ipynb)  
-  Продвинутые приёмы: работа с множественными графиками, фейсломапами (`FacetGrid`), настройка легенд.  
-- [Big_one_seaborn.ipynb](seaborn/Big_one_seaborn.ipynb)  
-  Разбор реального датасета (проектная работа):  
-  - **ProjectID, UserID, CompanyID, TypeDocs, FileSize, uploadServerUnixTime**  
-  - Архитектура: пользователи в компаниях, проекты, загрузка файлов по разделам.  
-   Исследование и визуализация активности пользователей/организаций.
+- [Seaborn.ipynb](seaborn/Seaborn.ipynb)
+  Notes on the library's functions: categorical and numeric plots, working with palettes, style settings.
+- [Задачи_seaborn_1.ipynb](seaborn/Задачи_seaborn_1.ipynb)
+  Practice problems: distributions, scatter plots, box plots, heatmaps.
+- [Задачи_seaborn_2.ipynb](seaborn/Задачи_seaborn_2.ipynb)
+  Advanced techniques: working with multiple plots, `FacetGrid`, tuning legends.
+- [Big_one_seaborn.ipynb](seaborn/Big_one_seaborn.ipynb)
+  A walkthrough of a real dataset (project work):
+  - **ProjectID, UserID, CompanyID, TypeDocs, FileSize, uploadServerUnixTime**
+  - Structure: users within companies, projects, file uploads by section.
+  Exploration and visualization of user/organization activity.
 
 ---
 
-## Навыки, которые демонстрирую
-- Работа с многомерными массивами и численными расчётами (**NumPy**).  
-- Базовая и продвинутая визуализация данных (**Matplotlib**).  
-- Статистическая визуализация и анализ распределений (**Seaborn**).  
-- Применение библиотек на учебных и реальных датасетах.  
-- Подготовка рабочих конспектов и решение задач в формате Jupyter Notebook.
+## Skills demonstrated
+- Working with multidimensional arrays and numerical computation (**NumPy**).
+- Basic and advanced data visualization (**Matplotlib**).
+- Statistical visualization and distribution analysis (**Seaborn**).
+- Applying the libraries to both coursework and real datasets.
+- Preparing working notes and solving problems in Jupyter notebooks.
 
 ---
 
- Этот раздел репозитория можно использовать как **учебный справочник по основным Python-библиотекам анализа данных**: от основ (NumPy) до полноценной визуализации (Matplotlib/Seaborn).
+This section can be used as a **study reference for the core Python data-analysis libraries**: from the basics (NumPy) to full visualization (Matplotlib/Seaborn).
 
 ---
 
-## Репозиторий будет пополнен:  
-- конспектом по библиотеке **pandas** (работа с таблицами, группировки, трансформации, объединения, сводные таблицы),  
-- конспектом по **scikit-learn** (основы ML: регрессия, классификация, кросс-валидация).  
-
+## To be added
+- notes on **pandas** (tables, group-bys, transformations, joins, pivot tables),
+- notes on **scikit-learn** (ML basics: regression, classification, cross-validation).

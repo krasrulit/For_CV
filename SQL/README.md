@@ -1,51 +1,51 @@
-# SQL  
+# SQL
 
-В этом разделе — два собранных PDF-файла по **SQL (MySQL 8+)**:
+This section has two compiled PDFs on **SQL (MySQL 8+)**:
 
--  [**Функции_SQL.pdf**](./Функции_SQL.pdf) — мой авторский конспект по SQL.  
-  По сути это сжатое описание всех моих знаний:  
-  Фильтрация и агрегация, `JOIN`, подзапросы и `UNION`, даты/строки/регэкспы, переменные `@`, `CTE (WITH)` и оконные функции (`OVER()`), а также приёмы вроде «FULL OUTER JOIN через UNION».
+- [**Функции_SQL.pdf**](./Функции_SQL.pdf) — my own SQL reference.
+  It's essentially a condensed write-up of everything I know:
+  filtering and aggregation, `JOIN`, subqueries and `UNION`, dates/strings/regex, `@` variables, `CTE (WITH)`, and window functions (`OVER()`), plus tricks like "FULL OUTER JOIN via UNION".
 
--  [**Примеры_запросов.pdf**](./Примеры_запросов.pdf) — подборка написанных мною SQL-задач с решениями и краткими пояснениями.  
-  Каждая задача оформлена в формате:  
-  **База данных → Формулировка → Решение → Объяснение**.
-
----
-
-## Навыки, которые демонстрирую
-
-- Агрегации (`SUM/COUNT/MIN/MAX`), `GROUP BY/HAVING`, фильтрация и сортировка.  
-- Соединения: `INNER/LEFT/RIGHT JOIN`, `USING` vs `ON`, многоступенчатые `JOIN` в `SELECT/UPDATE/DELETE`.  
-- Подзапросы и объединения `UNION/UNION ALL`; эмуляция `FULL OUTER JOIN` в MySQL.  
-- Работа со строками и датами: `SUBSTR/INSTR/CONCAT/REGEXP`, `FROM_UNIXTIME`, `DATEDIFF`, `MONTHNAME` и др.  
-- `CTE (WITH)` и оконные функции (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, агрегаты `OVER()`).  
-- Мини-ETL: создание промежуточных таблиц `CREATE TABLE … AS`, расчёт показателей и обновления с подзапросами.  
+- [**Примеры_запросов.pdf**](./Примеры_запросов.pdf) — a set of SQL problems I wrote, with solutions and short explanations.
+  Each problem is laid out as:
+  **Database → Task → Solution → Explanation**.
 
 ---
 
-## Карта задач (для [Примеры_запросов.pdf](./Примеры_запросов.pdf))
+## Skills demonstrated
 
-| №  | Кратко                                       | Ключевые приёмы                                              |
-|----|----------------------------------------------|--------------------------------------------------------------|
-| 1  | Жанры-лидеры по количеству                   | `JOIN`, `GROUP BY`, `SUM`, `HAVING`                          |
-| 2  | Ежемесячная выручка (2 года)                 | `UNION ALL`, `YEAR`, `MONTHNAME`, группировка по дате        |
-| 3  | Студенты с максимальным результатом          | подзапрос, `ORDER BY ... DESC LIMIT 1`, `DISTINCT`           |
-| 4  | Успешность вопросов                          | `LEFT JOIN`, доля `SUM(is_correct)/COUNT`, `ROUND`, `SUBSTR` |
-| 5  | Таблица `applicant`                          | `CREATE TABLE … AS`, `LEFT JOIN`, суммирование по предметам  |
-| 6  | Удаление не прошедших пороги                 | `DELETE … USING … JOIN`, сравнение `result` vs `min_result`  |
-| 7  | Начисление бонусов                           | `UPDATE` с подзапросом, `IFNULL/IF`, `LEFT JOIN`             |
-| 8  | Заполнение `step_keyword`                    | `INSERT … SELECT`, `JOIN`, `INSTR` (поиск слова)             |
-| 9  | Группы по числу решённых шагов               | вложенные агрегации, `COUNT(DISTINCT)`, `CASE`               |
-| 10 | Успешность шагов (0%/100%)                   | 2 `CTE`, `LEFT/RIGHT JOIN` + `UNION`, `IFNULL`               |
-| 11 | Прогресс и сертификаты                       | переменная `@step_sount`, `COUNT(DISTINCT)`, `CASE`          |
-| 12 | Среднее время урока                          | 3 `CTE`, фильтр `> 4 ч`, перевод секунд в часы, `ROW_NUMBER` |
-| 13 | Относительный рейтинг в модуле               | `MAX() OVER (PARTITION BY)`, проценты, сортировка            |
-| 14 | Детализация попыток `student_59`             | `CTE`, `DENSE_RANK`, замена «длинных» попыток, `SEC_TO_TIME` |
-| 15 | Группы поведения (I/II/III), 2 варианта      | Вариант 1: `CTE+LEAD`; Вариант 2: `CTE+LAG`                  |
+- Aggregations (`SUM/COUNT/MIN/MAX`), `GROUP BY/HAVING`, filtering, and sorting.
+- Joins: `INNER/LEFT/RIGHT JOIN`, `USING` vs `ON`, multi-step `JOIN`s in `SELECT/UPDATE/DELETE`.
+- Subqueries and `UNION/UNION ALL`; emulating `FULL OUTER JOIN` in MySQL.
+- Strings and dates: `SUBSTR/INSTR/CONCAT/REGEXP`, `FROM_UNIXTIME`, `DATEDIFF`, `MONTHNAME`, etc.
+- `CTE (WITH)` and window functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, `OVER()` aggregates).
+- Mini-ETL: creating intermediate tables with `CREATE TABLE … AS`, computing metrics, and updates with subqueries.
 
 ---
 
-## Как читать  
+## Task map (for [Примеры_запросов.pdf](./Примеры_запросов.pdf))
 
--  **Быстрое освежение синтаксиса** - [Функции_SQL.pdf](./Функции_SQL.pdf) (оглавление + примеры).  
--  **Кейсы, приближённые к практике** - [Примеры_запросов.pdf](./Примеры_запросов.pdf) (каждый кейс самодостаточен: схема, запрос, объяснение).  
+| #  | In brief                                  | Key techniques                                               |
+|----|-------------------------------------------|--------------------------------------------------------------|
+| 1  | Top genres by count                       | `JOIN`, `GROUP BY`, `SUM`, `HAVING`                          |
+| 2  | Monthly revenue (2 years)                 | `UNION ALL`, `YEAR`, `MONTHNAME`, grouping by date          |
+| 3  | Students with the top score               | subquery, `ORDER BY ... DESC LIMIT 1`, `DISTINCT`           |
+| 4  | Question success rate                     | `LEFT JOIN`, share `SUM(is_correct)/COUNT`, `ROUND`, `SUBSTR` |
+| 5  | `applicant` table                         | `CREATE TABLE … AS`, `LEFT JOIN`, summing by subject        |
+| 6  | Removing those below thresholds           | `DELETE … USING … JOIN`, comparing `result` vs `min_result` |
+| 7  | Awarding bonuses                          | `UPDATE` with a subquery, `IFNULL/IF`, `LEFT JOIN`          |
+| 8  | Filling `step_keyword`                    | `INSERT … SELECT`, `JOIN`, `INSTR` (word search)            |
+| 9  | Groups by number of solved steps          | nested aggregations, `COUNT(DISTINCT)`, `CASE`              |
+| 10 | Step success rate (0% / 100%)             | 2 `CTE`s, `LEFT/RIGHT JOIN` + `UNION`, `IFNULL`             |
+| 11 | Progress and certificates                 | `@step_count` variable, `COUNT(DISTINCT)`, `CASE`          |
+| 12 | Average lesson time                       | 3 `CTE`s, `> 4h` filter, seconds → hours, `ROW_NUMBER`     |
+| 13 | Relative ranking within a module          | `MAX() OVER (PARTITION BY)`, percentages, sorting          |
+| 14 | Attempt breakdown for `student_59`        | `CTE`, `DENSE_RANK`, replacing "long" attempts, `SEC_TO_TIME` |
+| 15 | Behavior groups (I/II/III), 2 variants    | Variant 1: `CTE+LEAD`; Variant 2: `CTE+LAG`                |
+
+---
+
+## How to read
+
+- **Quick syntax refresher** — [Функции_SQL.pdf](./Функции_SQL.pdf) (table of contents + examples).
+- **Practice-oriented cases** — [Примеры_запросов.pdf](./Примеры_запросов.pdf) (each case is self-contained: schema, query, explanation).

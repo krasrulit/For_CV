@@ -1,98 +1,106 @@
-# Портфолио: алгоритмы, SQL, Python-библиотеки и финпроект
+# Portfolio: algorithms, SQL, Python libraries, ML, econometrics & a finance project
 
-Этот репозиторий — краткий и наглядный обзор моих практических навыков. Здесь собраны решённые алгоритмические задачи, конспекты по SQL, разборы Python-библиотек и университетский проект по формированию инвестиционного портфеля.
+This repository is a concise, hands-on overview of my practical skills. It collects solved algorithmic problems, SQL notes, walkthroughs of core Python libraries, applied econometrics projects, and a university investment-portfolio project.
 
-## Быстрая навигация
--  **[algorithms/](./algorithms)** — решённые задачи по алгоритмам и структурам данных  
--  **[python_libraries/](./python_libraries)** — мои конспекты и разборы популярных Python-библиотек  
--  **[finance_project/](./finance_project)** — учебный проект по финансам (инвестпортфель)  
--  **[SQL/](./SQL)** — материалы по функциям SQL + практические задания  
--  **[ML/](./ML)** — теория и практическая справка по машинному обучению + ноутбук
-
----
-
-## Содержание
-
-### 1. [algorithms/](algorithms) — Алгоритмы
-- Подпапка **Yandex_algorithms** — решения задач из первой тренировки Яндекса по алгоритмам (домашнее задание 1).  
-- Подпапка **sum_algorithms** — задачи с LeetCode по суммам (`Two Sum`, `3Sum`, `4Sum`, `K-Sum` и др.).  
-Навыки: работа с массивами и строками, hash map, two pointers, сортировка, базовые структуры данных.
-
-Подробное описание: см. [README внутри папки](algorithms/README.md)  
+## Quick navigation
+- **[algorithms/](./algorithms)** — solved problems on algorithms and data structures
+- **[python_libraries/](./python_libraries)** — my notes and walkthroughs of popular Python libraries
+- **[ML/](./ML)** — machine-learning theory, practical cheat sheets, and a notebook
+- **[econometrics/](./econometrics)** — applied causal-inference projects
+- **[SQL/](./SQL)** — SQL function reference + practice problems
+- **[finance_project/](./finance_project)** — university finance project (investment portfolio)
 
 ---
 
-### 2. [python_libraries/](python_libraries) — Python-библиотеки
+## Contents
 
-Мои конспекты и практические задачи по основным библиотекам для анализа данных и визуализации:
+### 1. [algorithms/](algorithms) — Algorithms
+- Subfolder **Yandex_algorithms** — solutions to problems from Yandex's first algorithms training (homework 1).
+- Subfolder **sum_algorithms** — LeetCode "sum" problems (`Two Sum`, `3Sum`, `4Sum`, `K-Sum`, etc.).
 
--  **numpy/** — [Функции Numpy.ipynb](python_libraries/numpy/Функции%20Numpy.ipynb)  
-  Основные функции `NumPy`: создание массивов, операции, статистика, трансформации.  
+Skills: arrays and strings, hash maps, two pointers, sorting, basic data structures.
 
--  **matplotlib/**  
-  - [Функции_matplotlib.ipynb](python_libraries/matplotlib/Функции_matplotlib.ipynb) — обзор функций библиотеки  
-  - [Функции_matplotlib2.ipynb](python_libraries/matplotlib/Функции_matplotlib2.ipynb) — продолжение, примеры графиков  
-  - [Задачи_matplotlib.ipynb](python_libraries/matplotlib/Задачи_matplotlib.ipynb) — практические задачи  
-  - [Работа_с_картой.ipynb](python_libraries/matplotlib/Работа_с_картой.ipynb) — пример работы с картографическими данными  
-
--  **seaborn/**  
-  - [Seaborn.ipynb](python_libraries/seaborn/Seaborn.ipynb) — функции и стилизационные возможности  
-  - [Задачи_seaborn_1.ipynb](python_libraries/seaborn/Задачи_seaborn_1.ipynb), [Задачи_seaborn_2.ipynb](python_libraries/seaborn/Задачи_seaborn_2.ipynb) — практические задачи  
-  - [Big_one_seaborn.ipynb](python_libraries/seaborn/Big_one_seaborn.ipynb) — кейс с анализом реального датасета (поля: ProjectID, UserID, CompanyID, FileSize, TypeDocs и др.), включая визуализацию распределений, активности и связей между пользователями, проектами и компаниями.
-
--  **pandas/**  
-  - [Pandas.pdf](python_libraries/pandas/Pandas.pdf) и [README.md](python_libraries/pandas/README.md) — разбор функций библиотеки: `Series/DataFrame`, индексация, пропуски (`isna/fillna/interpolate`), объединения `concat/merge/join`, `groupby/agg/transform`, оконные методы (`rolling/expanding/ewm`), CSV/Excel (в т.ч. чанки), быстрые графики и форматирование таблиц `Styler`.
+Full description: see [the folder's README](algorithms/README.md)
 
 ---
 
-### 3. [finance_project/](finance_project) — Финансовый проект
+### 2. [python_libraries/](python_libraries) — Python libraries
 
-Учебный кейс: разработка инвестиционного плана и портфеля для вымышленного персонажа (студент, 20 лет, приверженец FIRE).  
+My notes and practice problems for the core data-analysis and visualization libraries:
 
-Материалы проекта:
-- [Проект_по_портфельному_менеджменту.xlsx](finance_project/Проект_по_портфельному_менеджменту.xlsx) — расчёты в Excel  
-- [Проект_по_портфельному_менеджменту.pdf](finance_project/Проект_по_портфельному_менеджменту.pdf) — презентация  
-- [final_code.ipynb](finance_project/final_code.ipynb) — расчёты и моделирование в Jupyter Notebook  
+- **numpy/** — [Функции Numpy.ipynb](python_libraries/numpy/Функции%20Numpy.ipynb)
+  Core `NumPy` functions: array creation, operations, statistics, transformations.
 
-В `README.md` внутри папки описаны:  
-- цели и вводные условия кейса,  
-- структура активов и валютная диверсификация,  
-- план накоплений и ребалансировки,  
-- риск-профиль и философия FIRE.  
+- **matplotlib/**
+  - [Функции_matplotlib.ipynb](python_libraries/matplotlib/Функции_matplotlib.ipynb) — overview of the library's functions
+  - [Функции_matplotlib2.ipynb](python_libraries/matplotlib/Функции_matplotlib2.ipynb) — continuation, example charts
+  - [Задачи_matplotlib.ipynb](python_libraries/matplotlib/Задачи_matplotlib.ipynb) — practice problems
+  - [Работа_с_картой.ipynb](python_libraries/matplotlib/Работа_с_картой.ipynb) — example of working with map data
 
----
+- **seaborn/**
+  - [Seaborn.ipynb](python_libraries/seaborn/Seaborn.ipynb) — functions and styling options
+  - [Задачи_seaborn_1.ipynb](python_libraries/seaborn/Задачи_seaborn_1.ipynb), [Задачи_seaborn_2.ipynb](python_libraries/seaborn/Задачи_seaborn_2.ipynb) — practice problems
+  - [Big_one_seaborn.ipynb](python_libraries/seaborn/Big_one_seaborn.ipynb) — a case study on a real dataset (fields: ProjectID, UserID, CompanyID, FileSize, TypeDocs, etc.), with visualization of distributions, activity, and relationships between users, projects, and companies.
 
-### 4. [SQL/](SQL) — SQL
-
-В этом разделе два собранных PDF-файла по SQL (MySQL 8+):
-
-- [Функции_SQL.pdf](SQL/Функции_SQL.pdf) — авторское описание функций SQL с примерами (фильтрация, агрегация, JOIN, подзапросы, даты/строки/регэкспы, переменные @, CTE и оконные функции).  
-- [Примеры_запросов.pdf](SQL/Примеры_запросов.pdf) — подборка задач с решениями (каждая оформлена блоками «База данных → Формулировка → Решение → Объяснение»).  
-
-Также внутри — карта задач по темам (`JOIN`, `GROUP BY`, оконные функции, CTE и др.), чтобы легко ориентироваться.  
+- **pandas/**
+  - [Pandas.pdf](python_libraries/pandas/Pandas.pdf) and [README.md](python_libraries/pandas/README.md) — a walkthrough of the library: `Series/DataFrame`, indexing, missing values (`isna/fillna/interpolate`), joins (`concat/merge/join`), `groupby/agg/transform`, window methods (`rolling/expanding/ewm`), CSV/Excel (including chunks), quick plots, and table formatting with `Styler`.
 
 ---
 
-### 5. [ML/](ML) — Machine Learning
+### 3. [econometrics/](econometrics) — Applied econometrics
 
-Материалы по ML: теоретический конспект, две практические «шпаргалки» и стартовый ноутбук.
+Causal-inference projects from Applied Econometrics (MSU): estimating causal effects from observational data and stress-testing them.
 
-- [ML_Практическая_справка.pdf](ML/ML_Практическая_справка.pdf) — базовые приёмы и шаблоны кода: чек-лист ML-проекта, подготовка данных (`pandas/NumPy`, `SimpleImputer`, `StandardScaler/MinMaxScaler`, `OneHotEncoder`), разбиение и валидация (`train_test_split`, `KFold/StratifiedKFold`, `cross_val_score`), пайплайны `Pipeline/ColumnTransformer` без data-leakage, метрики и бейзлайны (`Dummy*`, `accuracy/precision/recall/F1`, `ROC-AUC`, `MSE/MAE/R²`), подбор гиперпараметров (`GridSearchCV/RandomizedSearchCV`), сохранение артефактов (`joblib`), работа с дисбалансом (`class_weight`, стратификация).  
-- [ML_Практическая_справка_2.pdf](ML/ML_Практическая_справка_2.pdf) — рецепты: `DBSCAN` (k-distance plot, `cosine`/`haversine`), оценка кластеризации (силуэт, индекс Данна), регрессии `OLS/Ridge/Lasso/Logistic`, `PCA`, ансамбли (`RandomForest`, `CatBoost/XGBoost/LightGBM`), blending/stacking.  
-- [ML_Теория.pdf](ML/ML_Теория.pdf) — теоретические основы: переобучение и кросс-валидация, `GD/SGD`, `kNN`, `k-means`, деревья и pruning, `SVM`, `DBSCAN`, метрики классификации/регрессии и `ROC-AUC`, регуляризация и ядра, `PCA`, ансамбли (bagging/boosting/stacking), `EM`, bias-variance.  
-- [Введение в ML.ipynb](ML/Введение%20в%20ML.ipynb) — интерактивная тетрадка для быстрого старта (пайплайны и ключевые метрики).
+- **Urban Wage Premium** — does moving to a big city raise wages? (NLSY panel). Matching, IPW on a propensity score, double-robust LASSO, heterogeneous effects via causal forest.
+- **Platform Price Parity** — the effect of France's price-parity ban on Booking.com hotel prices. Difference-in-differences with triple interactions and synthetic control, with placebo and leave-one-out checks.
+
+Full description: see [the folder's README](econometrics/README.md)
+
+---
+
+### 4. [finance_project/](finance_project) — Finance project
+
+A coursework case: building an investment plan and portfolio for a fictional person (a 20-year-old student, FIRE adherent).
+
+Project materials:
+- [Проект_по_портфельному_менеджменту.xlsx](finance_project/Проект_по_портфельному_менеджменту.xlsx) — Excel calculations
+- [Проект_по_портфельному_менеджменту.pdf](finance_project/Проект_по_портфельному_менеджменту.pdf) — presentation
+- [final_code.ipynb](finance_project/final_code.ipynb) — calculations and modeling in a Jupyter notebook
+
+The folder's `README.md` describes the case goals and starting conditions, the asset structure and currency diversification, the savings and rebalancing plan, and the risk profile / FIRE philosophy.
 
 ---
 
-## Итог
+### 5. [SQL/](SQL) — SQL
 
-Этот репозиторий — мой **портфолио-набор**:  
-- Алгоритмы - олимпиадные и классические задачи (Яндекс + LeetCode).  
-- SQL - полный конспект и практика.  
-- Python-библиотеки → NumPy, Matplotlib, Seaborn, Pandas.  
-- Финансы - полноценный учебный проект по инвестициям.
-- ML - теоретический конспект + практические справочники и ноутбук.
+Two compiled PDFs on SQL (MySQL 8+):
 
-Он показывает **широту технической базы** и умение применять инструменты к практическим кейсам.
+- [Функции_SQL.pdf](SQL/Функции_SQL.pdf) — my own SQL reference with examples (filtering, aggregation, JOINs, subqueries, dates/strings/regex, `@` variables, CTEs, and window functions).
+- [Примеры_запросов.pdf](SQL/Примеры_запросов.pdf) — a set of problems with solutions (each laid out as "Database → Task → Solution → Explanation").
+
+The folder also includes a task map by topic (`JOIN`, `GROUP BY`, window functions, CTEs, etc.) for easy navigation.
 
 ---
+
+### 6. [ML/](ML) — Machine Learning
+
+ML materials: a theory summary, two practical cheat sheets, and a starter notebook.
+
+- [ML_Практическая_справка.pdf](ML/ML_Практическая_справка.pdf) — core techniques and code templates: an ML-project checklist, data prep (`pandas/NumPy`, `SimpleImputer`, `StandardScaler/MinMaxScaler`, `OneHotEncoder`), splitting and validation (`train_test_split`, `KFold/StratifiedKFold`, `cross_val_score`), `Pipeline/ColumnTransformer` without data leakage, metrics and baselines (`Dummy*`, `accuracy/precision/recall/F1`, `ROC-AUC`, `MSE/MAE/R²`), hyperparameter tuning (`GridSearchCV/RandomizedSearchCV`), saving artifacts (`joblib`), and handling imbalance (`class_weight`, stratification).
+- [ML_Практическая_справка_2.pdf](ML/ML_Практическая_справка_2.pdf) — recipes: `DBSCAN` (k-distance plot, `cosine`/`haversine`), clustering evaluation (silhouette, Dunn index), `OLS/Ridge/Lasso/Logistic` regressions, `PCA`, ensembles (`RandomForest`, `CatBoost/XGBoost/LightGBM`), blending/stacking.
+- [ML_Теория.pdf](ML/ML_Теория.pdf) — theoretical foundations: overfitting and cross-validation, `GD/SGD`, `kNN`, `k-means`, trees and pruning, `SVM`, `DBSCAN`, classification/regression metrics and `ROC-AUC`, regularization and kernels, `PCA`, ensembles (bagging/boosting/stacking), `EM`, bias-variance.
+- [Введение в ML.ipynb](ML/Введение%20в%20ML.ipynb) — an interactive notebook for a quick start (pipelines and key metrics).
+
+---
+
+## Summary
+
+This repository is my **portfolio set**:
+- Algorithms — competitive and classic problems (Yandex + LeetCode).
+- SQL — a full reference plus practice.
+- Python libraries — NumPy, Matplotlib, Seaborn, Pandas.
+- Econometrics — applied causal-inference projects.
+- Finance — a full coursework project on investing.
+- ML — a theory summary plus practical references and a notebook.
+
+It shows the **breadth of my technical base** and the ability to apply these tools to practical cases.

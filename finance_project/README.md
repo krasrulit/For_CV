@@ -1,60 +1,60 @@
-# Финансовый проект  
+# Finance Project
 
-Учебный проект по **портфельному менеджменту и инвестициям**.  
-
----
-
-## Кейс: Инвестиционный план для студента (FIRE)
-
-**Условие**  
-
-- **Андрей**, 20 лет  
-- Статус: студент 3-го курса на бюджете, активный образ жизни  
-- Семья: не женат, планирует свадьбу через 2–3 года  
-- Финансовое положение: долгов нет, сбережений и активов нет  
-- Доход: ~1,2 млн руб. в год (с перспективой роста на 30%/год)  
-- Цели:  
-  -  Финансовая независимость (FIRE)  
-  -  Подушка безопасности на непредвиденные ситуации  
-  -  Бюджет на свадьбу (2–3 года)  
-  -  Собственная квартира к пенсии  
-  -  Максимальный капитал к пенсии  
-  -  Карьерная цель: партнёрство в консалтинговой компании  
+A coursework project on **portfolio management and investing**.
 
 ---
 
-**Задача**  
+## Case: an investment plan for a student (FIRE)
 
-Разработать для Андрея **инвестиционный план и портфель** с нормой накоплений **20–40% годового дохода**, включая:  
+**Background**
 
--  **Горизонты целей**:  
-  - Краткосрочные (подушка безопасности, свадьба)  
-  - Долгосрочные (пенсия, финансовая независимость)  
-
--  **Структура активов и доли**:  
-  - акции, облигации, кэш, индексные фонды и ETF  
-  - валютная и страновая диверсификация  
-  - учёт риск-профиля (FIRE)  
-
--  **Финансовые инструменты и параметры**:  
-  - налоговые льготы (например, ИИС)  
-  - комиссии и ликвидность  
-  - инструменты для консервативного накопления на свадьбу  
-  - ориентиры по доходности и метрикам прогресса  
-
--  **Правила**:  
-  - регулярные взносы и ребалансировка  
-  - допустимая просадка портфеля  
-  - план формирования резервного фонда  
+- **Andrey**, 20 years old
+- Status: third-year student on a state-funded place, active lifestyle
+- Family: unmarried, planning a wedding in 2–3 years
+- Finances: no debt, no savings or assets
+- Income: ~1.2M RUB/year (with potential to grow ~30%/year)
+- Goals:
+  - Financial independence (FIRE)
+  - An emergency safety cushion
+  - A wedding budget (2–3 years)
+  - His own apartment by retirement
+  - Maximum capital by retirement
+  - Career goal: partnership at a consulting firm
 
 ---
 
-## Материалы проекта  
+**Task**
 
--  [Excel-расчёты](Проект_по_портфельному_менеджменту.xlsx)  
--  [Презентация проекта](Проект_по_портфельному_менеджменту.pdf)  
--  [Jupyter Notebook с кодом и расчётами](final_code.ipynb)  
+Build Andrey an **investment plan and portfolio** with a savings rate of **20–40% of annual income**, including:
+
+- **Goal horizons**:
+  - Short-term (safety cushion, wedding)
+  - Long-term (retirement, financial independence)
+
+- **Asset structure and allocations**:
+  - stocks, bonds, cash, index funds, and ETFs
+  - currency and country diversification
+  - risk profile (FIRE)
+
+- **Instruments and parameters**:
+  - tax incentives (e.g., an IIS — Russian individual investment account)
+  - fees and liquidity
+  - instruments for conservative saving toward the wedding
+  - return targets and progress metrics
+
+- **Rules**:
+  - regular contributions and rebalancing
+  - acceptable portfolio drawdown
+  - a plan for building the reserve fund
 
 ---
 
- Решение оформлено в виде инвестиционного плана: структура портфеля, стратегия накоплений и подход к управлению рисками.
+## Project materials
+
+- [Excel calculations](Проект_по_портфельному_менеджменту.xlsx)
+- [Project presentation](Проект_по_портфельному_менеджменту.pdf)
+- [Jupyter notebook with code and calculations](final_code.ipynb)
+
+---
+
+The solution is presented as an investment plan: portfolio structure, savings strategy, and a risk-management approach.
