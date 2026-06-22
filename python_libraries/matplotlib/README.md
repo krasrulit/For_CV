@@ -1,30 +1,30 @@
 # Matplotlib
 
-В этой папке собраны мои материалы по библиотеке **Matplotlib**:
+This folder collects my materials on **Matplotlib**:
 
-- разбор функций для построения графиков;
-- практика визуализаций на различных датасетах;
-- работа с геоданными и картами.
-
----
-
-## Содержимое
-
-- [Функции_matplotlib.ipynb](Функции_matplotlib.ipynb) — базовые функции библиотеки, создание простых графиков, настройка осей, легенд, подписей.
-- [Функции_matplotlib2.ipynb](Функции_matplotlib2.ipynb) — дополнительные возможности: работа с подграфиками (`subplots`), стилизация графиков, настройка сетки и цветов.
-- [Задачи_matplotlib.ipynb](Задачи_matplotlib.ipynb) — подборка практических задач на построение различных видов графиков (линейные, столбчатые, круговые и др.).
-- [Работа_с_картой.ipynb](Работа_с_картой.ipynb) — визуализация геоданных и построение карт с использованием Matplotlib.
+- a walkthrough of plotting functions;
+- visualization practice on various datasets;
+- working with geodata and maps.
 
 ---
 
-## Навыки, которые демонстрирую
-- Построение и кастомизация графиков: `plot`, `bar`, `hist`, `pie` и др.
-- Работа с осями (`xlim`, `ylim`), подписями (`xlabel`, `ylabel`, `title`) и легендами (`legend`).
-- Множественные графики на одном полотне (`subplots`).
-- Настройка сетки, цветов и стилей графиков.
-- Визуализация пространственных данных (работа с картами).
-- Сравнительный анализ данных через графики.
+## Contents
+
+- [Функции_matplotlib.ipynb](Функции_matplotlib.ipynb) — the library's basic functions: creating simple charts, configuring axes, legends, and labels.
+- [Функции_matplotlib2.ipynb](Функции_matplotlib2.ipynb) — additional features: subplots, chart styling, configuring the grid and colors.
+- [Задачи_matplotlib.ipynb](Задачи_matplotlib.ipynb) — a set of practice problems on building different chart types (line, bar, pie, etc.).
+- [Работа_с_картой.ipynb](Работа_с_картой.ipynb) — visualizing geodata and building maps with Matplotlib.
 
 ---
 
- Эти ноутбуки можно рассматривать как практический конспект по работе с Matplotlib — от базовых функций до реальных задач с визуализацией данных.
+## Skills demonstrated
+- Building and customizing charts: `plot`, `bar`, `hist`, `pie`, etc.
+- Working with axes (`xlim`, `ylim`), labels (`xlabel`, `ylabel`, `title`), and legends (`legend`).
+- Multiple plots on one figure (`subplots`).
+- Configuring grids, colors, and chart styles.
+- Visualizing spatial data (maps).
+- Comparative data analysis through charts.
+
+---
+
+These notebooks work as a practical guide to Matplotlib — from basic functions to real data-visualization tasks.

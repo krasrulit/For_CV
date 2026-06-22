@@ -1,60 +1,58 @@
-# Seaborn — разбор функций и практические задачи
+# Seaborn — function walkthrough and practice problems
 
-В этой директории собраны мои ноутбуки по библиотеке **Seaborn** для Python.  
-Здесь я последовательно разбираю функции библиотеки, визуализацию данных и применяю их на практике через решение задач.  
+This directory collects my notebooks on the **Seaborn** library for Python.
+I work through the library's functions and data visualization step by step, then apply them in practice by solving problems.
 
 ---
 
-## Содержание
+## Contents
 
 ### 1. [Seaborn.ipynb](./Seaborn.ipynb)
-Базовый конспект по функциям `seaborn`: основные типы графиков (scatterplot, barplot, boxplot, heatmap и др.), стили оформления, настройка цветовых палитр. Подходит как «шпаргалка» по библиотеке.
+A basic reference for `seaborn` functions: the main plot types (scatterplot, barplot, boxplot, heatmap, etc.), styling, and color-palette configuration. Works as a library cheat sheet.
 
 ### 2. [Задачи_seaborn_1.ipynb](./Задачи_seaborn_1.ipynb)
-Практика по визуализации данных на простых датасетах.  
-Задействованы:
-- группировки и сравнения категориальных переменных,
-- анализ распределений,
-- применение `hue`, `col`, `row` для многомерных графиков.
+Data-visualization practice on simple datasets. Covers:
+- grouping and comparing categorical variables,
+- distribution analysis,
+- using `hue`, `col`, `row` for multidimensional plots.
 
 ### 3. [Задачи_seaborn_2.ipynb](./Задачи_seaborn_2.ipynb)
-Продолжение практики: визуализация более сложных зависимостей.  
-Темы:
-- совместное использование `matplotlib` и `seaborn`,
-- комбинирование нескольких графиков в одной фигуре,
-- настройка осей, легенд и подписей.
+More practice: visualizing more complex relationships. Topics:
+- combining `matplotlib` and `seaborn`,
+- combining several plots in one figure,
+- configuring axes, legends, and labels.
 
 ### 4. [Big_one_seaborn.ipynb](./Big_one_seaborn.ipynb)
-Большой разбор на основе кастомного датасета.  
+A large walkthrough on a custom dataset.
 
-**Описание датасета:**
-- `ProjectID` — id проекта (связь с другой таблицей)  
-- `UserID` — id пользователя (связь с другой таблицей)  
-- `uploadServerUnixTime` — время загрузки файла на сервер (UnixTime)  
-- `CompanyID` — id организации (связь с другой таблицей)  
-- `FileSize` — размер файла в байтах  
-- `TypeDocs` — раздел, в который загружен файл  
+**Dataset description:**
+- `ProjectID` — project id (linked to another table)
+- `UserID` — user id (linked to another table)
+- `uploadServerUnixTime` — file upload time on the server (Unix time)
+- `CompanyID` — organization id (linked to another table)
+- `FileSize` — file size in bytes
+- `TypeDocs` — the section a file was uploaded to
 
-**Архитектура:**  
-Есть организации-застройщики (`CompanyID`), в каждой может быть несколько пользователей (`UserID`).  
-Существуют проекты (`ProjectID`), к каждому может быть доступ у разных пользователей из разных организаций.  
-Внутри проекта документы загружаются в разделы (`TypeDocs`).  
+**Structure:**
+There are developer organizations (`CompanyID`), each of which can have several users (`UserID`).
+There are projects (`ProjectID`), each of which can be accessible to different users from different organizations.
+Within a project, documents are uploaded into sections (`TypeDocs`).
 
-**В ноутбуке выполняется:**
-- очистка и первичный анализ данных,
-- визуализация распределений (по пользователям, компаниям, типам документов),
-- анализ активности загрузки во времени,
-- поиск закономерностей по размеру файлов и структуре проектов.
-
----
-
-## Навыки, которые демонстрируются
-- Использование **Seaborn** для анализа категориальных и числовых данных.
-- Комбинация `pandas` + `seaborn` для исследовательского анализа данных (EDA).
-- Работа с датой и временем (UnixTime → datetime).
-- Визуализация многомерных связей и распределений.
-- Подготовка данных для анализа (группировки, агрегации, фильтрация).
+**The notebook covers:**
+- data cleaning and initial analysis,
+- visualizing distributions (by user, company, document type),
+- analyzing upload activity over time,
+- finding patterns by file size and project structure.
 
 ---
 
- Все ноутбуки самодостаточны: их можно открыть и выполнить для просмотра графиков и анализа.
+## Skills demonstrated
+- Using **Seaborn** to analyze categorical and numeric data.
+- Combining `pandas` + `seaborn` for exploratory data analysis (EDA).
+- Working with date and time (Unix time → datetime).
+- Visualizing multidimensional relationships and distributions.
+- Preparing data for analysis (grouping, aggregation, filtering).
+
+---
+
+All notebooks are self-contained: open and run them to view the charts and analysis.

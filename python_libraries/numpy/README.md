@@ -1,29 +1,29 @@
 # NumPy
 
-В этой папке собраны мои материалы по библиотеке **NumPy** — основной инструмент для работы с многомерными массивами и численными вычислениями в Python.
+This folder collects my materials on **NumPy** — the core tool for working with multidimensional arrays and numerical computation in Python.
 
 ---
 
-## Содержимое
+## Contents
 
-- [Функции Numpy.ipynb](Функции%20Numpy.ipynb) — обзор ключевых функций библиотеки с примерами:
-  - создание массивов (`array`, `arange`, `linspace`, `zeros`, `ones`);
-  - работа с индексами, срезами и формой массива (`reshape`, `flatten`, `transpose`);
-  - арифметические операции и broadcasting;
-  - агрегатные функции (`sum`, `mean`, `min`, `max`, `std`, `var`);
-  - работа с случайными числами (`random`, `randn`, `choice`);
-  - булевы маски и фильтрация данных;
-  - линейная алгебра (`dot`, `matmul`, `linalg.inv`, `eig`).
-
----
-
-## Навыки, которые демонстрирую
-- Эффективная работа с многомерными массивами.
-- Выполнение статистических расчётов и агрегаций.
-- Генерация случайных выборок и моделирование.
-- Применение инструментов линейной алгебры.
-- Подготовка данных для анализа и визуализации.
+- [Функции Numpy.ipynb](Функции%20Numpy.ipynb) — an overview of the library's key functions with examples:
+  - array creation (`array`, `arange`, `linspace`, `zeros`, `ones`);
+  - indexing, slicing, and reshaping (`reshape`, `flatten`, `transpose`);
+  - arithmetic operations and broadcasting;
+  - aggregate functions (`sum`, `mean`, `min`, `max`, `std`, `var`);
+  - random numbers (`random`, `randn`, `choice`);
+  - boolean masks and data filtering;
+  - linear algebra (`dot`, `matmul`, `linalg.inv`, `eig`).
 
 ---
 
- Этот ноутбук можно рассматривать как практический справочник по **NumPy**, который охватывает основные и наиболее часто применяемые приёмы работы с массивами.
+## Skills demonstrated
+- Efficient work with multidimensional arrays.
+- Statistical computations and aggregations.
+- Generating random samples and simulation.
+- Applying linear-algebra tools.
+- Preparing data for analysis and visualization.
+
+---
+
+This notebook works as a practical reference for **NumPy**, covering the core and most frequently used array techniques.
